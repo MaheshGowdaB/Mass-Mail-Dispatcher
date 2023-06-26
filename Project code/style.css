@@ -1,0 +1,147 @@
+/* Set default font family, background color, and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-size: cover;
+    position:relative;
+    color: #333333;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+
+/* Style the form container */
+form {
+    max-width: 600px;
+    margin-left: 26em;
+    margin-top: 1em;
+    /* From https://css.glass */
+    background: rgb(243, 253, 192);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  /* Style form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #575761;
+  }
+
+  /* Style text inputs and text areas */
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #767a7d;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #766f6f;
+  background: rgba(187, 179, 179, 0.1);
+}
+
+ /* Style text inputs and text areas */
+ #subject{
+    width: 89%;
+    padding: 10px;
+    margin-bottom:-1em;
+    border: 1px solid #767a7d;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #6f7672;
+    z-index: 22;
+    position: absolute;
+    
+    background: rgb(255, 255, 255);
+  }
+  #message{
+    background: rgb(255, 255, 255);
+  }
+  #senderEmail{
+    background: rgb(255, 255, 255);
+  }
+
+  /* Style file input */
+input[type="file"] {
+    margin-bottom: 12px;
+    color: #393E41;
+    
+  }
+
+  /* Style form submit button */
+input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #55c2e6;
+  
+  border: none;
+  border-radius: 5px;
+  color: #393E41;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style submit button on hover */
+input[type="button"]:hover {
+  color: #e6e6e6;
+  background-color:#1f8af6;
+  
+}
+
+/* Style container for valid and invalid emails */
+#validEmails {
+    margin-top: 1px;
+  }
+  #invalidEmails {
+    margin-top: 1px;
+    
+  } 
+
+  
+/* Style paragraphs within container for valid and invalid emails */
+#validEmails p,
+#invalidEmails p {
+  font-weight: bold;
+  color: #393E41;
+}
+
+
+/* Style divs within container for valid and invalid emails */
+#validEmails div {
+color: #393E41;
+}
+
+#invalidEmails div {
+color: #393E41;
+}
+
+#message{
+  color:#393E41;
+}
+#senderEmail{
+  color:#393E41;
+}
+
+/* Style text inputs and text areas */
+input[type="email"]:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #393d40;
+ 
+}
+#validEmails, #invalidEmails {
+  height: 150px;
+  overflow: auto;
+}
